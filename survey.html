@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+      <script src="js/scripts.js"></script>
+    </head>
+  <body>
+
+    <div class="formOne">
+      <div class="well">
+        <h2>Fill in info</h2>
+        <form id="formOne">
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input id="firstName" class="form-control" type="text">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" class="form-control" type="text">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="food">Favorite food?</label>
+              <input id="food" class="form-control" type="text">
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col-md-4">
+              <label for="music">Favorite Music</label>
+              <select class="form-control" id="">
+                <option>Rock</option>
+                <option>R&B</option>
+                <option>Alternative</option>
+                <option>Classical</option>
+                <option>Other</option>
+              </select>
+
+              <!--input id="music" class="form-control" type="text"-->
+            </div>
+
+            <div class="form-group col-md-4">
+              <h2>Who is correct me (checked) you no one</h2>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="person" value="Me" checked>
+                  Me
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="person" value="You">
+                  You
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="person" value="No one">
+                  No One
+                </label>
+              </div>
+              <!--JS: var flavor = $("input:radio[name=person]:checked").val();-->
+              <!--input id="start" class="form-control" type="text"-->
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="end">Color</label>
+              <h2>favorite color color picker</h2>
+              <div class="form-group">
+                <label for="color">What is your favorite color?</label>
+                <input id="color" class="form-control" type="color">
+              </div>
+              <!--js: var favoriteColor = $("#color").val();-->
+              <!--input id="end" class="form-control" type="text"-->
+            </div>
+
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+<!-- js: var music = $("#bmusic").val();
+-->
+
+
+
+
+
+  </body>
+</html>
